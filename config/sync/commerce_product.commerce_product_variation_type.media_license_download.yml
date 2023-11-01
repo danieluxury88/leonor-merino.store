@@ -1,0 +1,21 @@
+uuid: 67aea47e-db7c-4cd3-8fba-804a7845202c
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_license
+third_party_settings:
+  commerce_license:
+    license_types:
+      commerce_file: commerce_file
+    activate_on_place: true
+_core:
+  default_config_hash: EhzdSDgNl4HklKLO_oZqKAAR450TFlp7qTUhY5WQb9s
+id: media_license_download
+label: 'Media License Download'
+orderItemType: digital_license_product
+generateTitle: false
+traits:
+  - commerce_file
+  - commerce_license
+locked: false

@@ -1,0 +1,41 @@
+uuid: 6071e3d8-de8d-47e4-9da2-e7a221300077
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.product_collections
+  module:
+    - block_visibility_conditions_node
+    - block_visibility_conditions_taxonomy
+    - facets
+    - system
+  theme:
+    - belgrade
+_core:
+  default_config_hash: vK4m_1-VKAXqZKKrJKt72MwRYUEg0gV_20EWc2JjR5A
+id: productcollections
+theme: belgrade
+region: sidebar_first
+weight: -9
+provider: null
+plugin: 'facet_block:product_collections'
+settings:
+  id: 'facet_block:product_collections'
+  label: Categories
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: productcollections
+visibility:
+  not_node_type:
+    id: not_node_type
+    bundles: {  }
+    negate: null
+  not_taxonomy_vocabulary:
+    id: not_taxonomy_vocabulary
+    bundles: {  }
+    negate: null
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/products\r\n/products*"
