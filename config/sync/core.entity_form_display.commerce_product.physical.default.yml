@@ -1,4 +1,4 @@
-uuid: d6c295a5-5deb-4e03-90d1-339a54cf1e71
+uuid: 8be4b458-56e2-41ca-850d-5121c0bb7f68
 langcode: en
 status: true
 dependencies:
@@ -23,33 +23,33 @@ third_party_settings:
       children:
         - title
         - body
-      label: 'Title and description'
-      region: content
       parent_name: ''
       weight: 0
       format_type: fieldset
+      region: content
       format_settings:
-        classes: ''
         show_empty_fields: false
         id: ''
+        classes: ''
         description: ''
         required_fields: true
+      label: 'Title and description'
     group_organization:
       children:
         - product_brand
         - product_collections
         - product_tags
-      label: Organization
-      region: content
       parent_name: ''
       weight: 2
       format_type: fieldset
+      region: content
       format_settings:
-        classes: ''
         show_empty_fields: false
         id: ''
+        classes: ''
         description: ''
         required_fields: true
+      label: Organization
 _core:
   default_config_hash: VA6s4SgI-7-a_SBQ7jE71DsixeU9A5UmaG6M7FE5pso
 id: commerce_product.physical.default
@@ -58,15 +58,15 @@ bundle: physical
 mode: default
 content:
   body:
-    type: text_textarea_with_summary
     weight: 5
-    region: content
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
   created:
     type: datetime_timestamp
     weight: 6
@@ -74,20 +74,13 @@ content:
     settings: {  }
     third_party_settings: {  }
   images:
-    type: image_image
     weight: 1
-    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-  langcode:
-    type: language_select
-    weight: 2
+    type: image_image
     region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
   path:
     type: path
     weight: 7
@@ -95,33 +88,33 @@ content:
     settings: {  }
     third_party_settings: {  }
   product_brand:
-    type: options_select
     weight: 10
-    region: content
     settings: {  }
     third_party_settings: {  }
-  product_collections:
     type: options_select
-    weight: 11
     region: content
+  product_collections:
+    weight: 11
     settings: {  }
     third_party_settings: {  }
-  product_tags:
-    type: entity_reference_autocomplete_tags
-    weight: 12
+    type: options_select
     region: content
+  product_tags:
+    weight: 12
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+    region: content
   status:
     type: boolean_checkbox
-    weight: 8
-    region: content
     settings:
       display_label: true
+    weight: 8
+    region: content
     third_party_settings: {  }
   stores:
     type: commerce_entity_select

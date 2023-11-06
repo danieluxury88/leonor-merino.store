@@ -1,4 +1,4 @@
-uuid: 8f0b8db2-15c3-4f7d-becf-5e55ee337236
+uuid: d53a4794-8403-49cb-ad8f-6b0b42bbb82c
 langcode: en
 status: true
 dependencies:
@@ -15,18 +15,17 @@ bundle: default
 mode: checkout
 content:
   shipping_method:
-    type: commerce_shipping_method
     label: above
-    settings: {  }
-    third_party_settings: {  }
+    type: commerce_shipping_method
     weight: 0
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   amount: true
   items: true
   original_amount: true
   package_type: true
-  search_api_excerpt: true
   shipping_profile: true
   state: true
   title: true

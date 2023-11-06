@@ -1,4 +1,4 @@
-uuid: ef9598ae-e969-4477-b242-40ddcbd7f52e
+uuid: 3f50b73c-2498-4e7a-8284-8799e0442d21
 langcode: en
 status: true
 dependencies:
@@ -556,7 +556,6 @@ content:
 hidden:
   created: true
   images: true
-  langcode: true
   layout_builder__layout: true
   product_brand: true
   product_collections: true

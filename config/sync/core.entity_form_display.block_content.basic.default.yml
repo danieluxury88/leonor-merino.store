@@ -1,4 +1,4 @@
-uuid: def4ee58-9f29-4676-904d-a6d284f2da7d
+uuid: 0dcc186c-fb9b-4104-94ae-cd6ed5845d49
 langcode: en
 status: true
 dependencies:
@@ -17,25 +17,18 @@ content:
   body:
     type: text_textarea_with_summary
     weight: -4
-    region: content
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
+    region: content
   info:
     type: string_textfield
     weight: -5
-    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  langcode:
-    type: language_select
-    weight: 2
     region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
 hidden: {  }

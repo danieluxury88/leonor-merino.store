@@ -1,4 +1,4 @@
-uuid: 426d596b-a9b3-4044-816d-0f8e5d8510b9
+uuid: 50df2358-a522-4a6a-addd-0ba5101daa9c
 langcode: en
 status: true
 dependencies:
@@ -104,7 +104,6 @@ hidden:
   balance: true
   changed: true
   ip_address: true
-  search_api_excerpt: true
   shipments: true
   store_id: true
   total_paid: true

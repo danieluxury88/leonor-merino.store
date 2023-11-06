@@ -1,4 +1,4 @@
-uuid: 3f058591-c56c-4817-a659-2d97d37645ce
+uuid: 7f4ddda2-d589-4bb1-8683-38b70614e140
 langcode: en
 status: true
 dependencies:
@@ -43,7 +43,6 @@ content:
 hidden:
   body: true
   created: true
-  langcode: true
   layout_builder__layout: true
   product_brand: true
   product_collections: true

@@ -1,4 +1,4 @@
-uuid: 66f334d2-2935-4cde-ba57-84210438c64c
+uuid: f17029d1-ef66-4a99-937d-a27dd659132e
 langcode: en
 status: true
 dependencies:
@@ -17,16 +17,15 @@ mode: cart
 content:
   title:
     type: string
+    weight: 0
+    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 0
-    region: content
 hidden:
   commerce_file: true
   commerce_variation_cart_form: true
-  langcode: true
   license_expiration: true
   license_type: true
   list_price: true

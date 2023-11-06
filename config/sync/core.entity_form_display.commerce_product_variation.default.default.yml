@@ -1,4 +1,4 @@
-uuid: 60e05999-4c3f-4813-a5e1-ff0a53593593
+uuid: fa761a95-960a-4f9f-b437-03460400081f
 langcode: en
 status: true
 dependencies:
@@ -13,13 +13,6 @@ targetEntityType: commerce_product_variation
 bundle: default
 mode: default
 content:
-  langcode:
-    type: language_select
-    weight: 2
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
   list_price:
     type: commerce_list_price
     weight: -1
@@ -29,24 +22,24 @@ content:
   price:
     type: commerce_price_default
     weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    region: content
   sku:
     type: string_textfield
     weight: -4
-    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    region: content
   status:
     type: boolean_checkbox
     weight: 10
-    region: content
     settings:
       display_label: true
     third_party_settings: {  }
+    region: content
 hidden:
   created: true
   uid: true

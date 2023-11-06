@@ -1,4 +1,4 @@
-uuid: 94612e4e-c366-4fed-abc0-2bf32eb40a71
+uuid: a55739fd-7314-4e45-a781-75c0954bd67f
 langcode: en
 status: true
 dependencies:
@@ -25,7 +25,6 @@ content:
     region: content
 hidden:
   commerce_variation_cart_form: true
-  langcode: true
   list_price: true
   product_id: true
   search_api_excerpt: true

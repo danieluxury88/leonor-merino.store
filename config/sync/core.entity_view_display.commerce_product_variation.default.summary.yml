@@ -1,4 +1,4 @@
-uuid: e150d84d-4f9e-4fc3-898b-df4e8c18fd0b
+uuid: d4589566-e36e-4f3f-bc1b-ae39f98e7c45
 langcode: en
 status: true
 dependencies:
@@ -18,32 +18,30 @@ bundle: default
 mode: summary
 content:
   list_price:
-    type: commerce_price_default
     label: above
+    type: commerce_price_default
+    weight: -1
+    region: content
     settings:
       strip_trailing_zeroes: false
       currency_display: symbol
     third_party_settings: {  }
-    weight: -1
-    region: content
   product_id:
     type: entity_reference_label
+    weight: 0
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
-    weight: 0
     region: content
   title:
-    type: string
     label: hidden
+    type: string
+    weight: -5
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: -5
     region: content
 hidden:
-  langcode: true
   price: true
-  search_api_excerpt: true
   sku: true

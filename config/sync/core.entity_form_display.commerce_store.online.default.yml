@@ -1,4 +1,4 @@
-uuid: 03dd696f-c63b-473b-bd66-6dd7f85cb03d
+uuid: b2c05535-4258-4e7d-a1dd-489a1a61b650
 langcode: en
 status: true
 dependencies:
@@ -16,9 +16,9 @@ mode: default
 content:
   address:
     type: address_default
+    settings: {  }
     weight: 4
     region: content
-    settings: {  }
     third_party_settings: {  }
   billing_countries:
     type: options_select
@@ -34,25 +34,18 @@ content:
     third_party_settings: {  }
   is_default:
     type: boolean_checkbox
-    weight: 9
-    region: content
     settings:
       display_label: true
-    third_party_settings: {  }
-  langcode:
-    type: language_select
-    weight: 2
+    weight: 9
     region: content
-    settings:
-      include_locked: true
     third_party_settings: {  }
   mail:
     type: email_default
     weight: 1
     region: content
     settings:
-      placeholder: ''
       size: 60
+      placeholder: ''
     third_party_settings: {  }
   name:
     type: string_textfield
@@ -70,16 +63,10 @@ content:
     third_party_settings: {  }
   prices_include_tax:
     type: boolean_checkbox
-    weight: 6
-    region: content
     settings:
       display_label: true
-    third_party_settings: {  }
-  shipping_countries:
-    type: options_select
-    weight: 4
+    weight: 6
     region: content
-    settings: {  }
     third_party_settings: {  }
   tax_registrations:
     type: options_select

@@ -1,4 +1,4 @@
-uuid: 38de1788-eefc-4a9c-903b-3484bb607043
+uuid: 9c8b2d2f-e593-493f-8e16-00113ed18b1a
 langcode: en
 status: true
 dependencies:
@@ -26,7 +26,6 @@ content:
 hidden:
   commerce_file: true
   commerce_variation_cart_form: true
-  langcode: true
   license_expiration: true
   license_type: true
   list_price: true

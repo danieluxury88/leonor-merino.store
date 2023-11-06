@@ -1,4 +1,4 @@
-uuid: c61028d2-8498-49b9-a409-54b7ead466bc
+uuid: 44e9cd11-3185-4492-88f3-811488c7e2a0
 langcode: en
 status: true
 dependencies:
@@ -34,13 +34,12 @@ content:
     region: content
   user_picture:
     type: image_image
-    weight: -1
-    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
+    weight: -1
+    region: content
 hidden:
   commerce_remote_id: true
   customer_profiles: true
-  langcode: true

@@ -1,4 +1,4 @@
-uuid: 610fe53d-d620-4803-9efb-3314b9228580
+uuid: f0365c6c-fffd-446a-b4ca-664523662c0f
 langcode: en
 status: true
 dependencies:
@@ -25,32 +25,32 @@ third_party_settings:
         - product_collections
         - product_brand
         - product_tags
-      label: Organization
-      region: content
       parent_name: ''
       weight: 2
       format_type: fieldset
+      region: content
       format_settings:
-        classes: ''
         show_empty_fields: false
         id: ''
+        classes: ''
         description: ''
         required_fields: true
+      label: Organization
     group_title_and_description:
       children:
         - title
         - body
-      label: 'Title and description'
-      region: content
       parent_name: ''
       weight: 0
       format_type: fieldset
+      region: content
       format_settings:
-        classes: ''
         show_empty_fields: false
         id: ''
+        classes: ''
         description: ''
         required_fields: true
+      label: 'Title and description'
 _core:
   default_config_hash: DaEuSrclVl8wEiXAsljObQcICGAsv158azdE6e4TPK4
 id: commerce_product.media.default
@@ -61,13 +61,13 @@ content:
   body:
     type: text_textarea_with_summary
     weight: 3
-    region: content
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
+    region: content
   created:
     type: datetime_timestamp
     weight: 4
@@ -75,20 +75,13 @@ content:
     settings: {  }
     third_party_settings: {  }
   images:
-    type: image_image
     weight: 1
-    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-  langcode:
-    type: language_select
-    weight: 2
+    type: image_image
     region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
   path:
     type: path
     weight: 5
@@ -96,33 +89,33 @@ content:
     settings: {  }
     third_party_settings: {  }
   product_brand:
-    type: options_select
     weight: 2
-    region: content
     settings: {  }
     third_party_settings: {  }
-  product_collections:
     type: options_select
-    weight: 1
     region: content
+  product_collections:
+    weight: 1
     settings: {  }
     third_party_settings: {  }
-  product_tags:
-    type: entity_reference_autocomplete_tags
-    weight: 3
+    type: options_select
     region: content
+  product_tags:
+    weight: 3
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+    region: content
   status:
     type: boolean_checkbox
-    weight: 6
-    region: content
     settings:
       display_label: true
+    weight: 6
+    region: content
     third_party_settings: {  }
   stores:
     type: commerce_entity_select

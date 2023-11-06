@@ -1,4 +1,4 @@
-uuid: fea76328-16f4-48c2-b3ab-15face04aada
+uuid: 377e5e82-729e-416c-a177-00bc98aee969
 langcode: en
 status: true
 dependencies:
@@ -15,8 +15,9 @@ bundle: commerce_file
 mode: default
 content:
   changed:
-    type: timestamp
     label: inline
+    type: timestamp
+    weight: 19
     settings:
       date_format: medium
       custom_date_format: ''
@@ -30,9 +31,8 @@ content:
         past_format: '@interval ago'
         granularity: 2
         refresh: 60
-    third_party_settings: {  }
-    weight: 19
     region: content
+    third_party_settings: {  }
   created:
     type: timestamp
     label: inline
@@ -157,5 +157,4 @@ content:
     third_party_settings: {  }
     weight: 3
     region: content
-hidden:
-  search_api_excerpt: true
+hidden: {  }

@@ -1,4 +1,4 @@
-uuid: cdf94191-1619-44c8-9a2a-84f4758bb78f
+uuid: 8c1643fe-93ac-47a0-814f-7508e216cbda
 langcode: en
 status: true
 dependencies:
@@ -21,13 +21,6 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
-    third_party_settings: {  }
-  langcode:
-    type: language_select
-    weight: 2
-    region: content
-    settings:
-      include_locked: true
     third_party_settings: {  }
 hidden:
   info: true

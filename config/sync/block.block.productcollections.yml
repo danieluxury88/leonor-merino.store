@@ -1,12 +1,10 @@
-uuid: 6071e3d8-de8d-47e4-9da2-e7a221300077
+uuid: a1c1f68d-8879-44b1-ac13-4e1d83620627
 langcode: en
 status: true
 dependencies:
   config:
     - facets.facet.product_collections
   module:
-    - block_visibility_conditions_node
-    - block_visibility_conditions_taxonomy
     - facets
     - system
   theme:
@@ -27,14 +25,6 @@ settings:
   context_mapping: {  }
   block_id: productcollections
 visibility:
-  not_node_type:
-    id: not_node_type
-    bundles: {  }
-    negate: null
-  not_taxonomy_vocabulary:
-    id: not_taxonomy_vocabulary
-    bundles: {  }
-    negate: null
   request_path:
     id: request_path
     negate: false

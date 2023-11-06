@@ -88,8 +88,8 @@ third_party_settings:
               - col-lg-6
               - col-md-6
               - col-12
-          remove_gutters: '0'
           context_mapping: {  }
+          remove_gutters: '0'
         components:
           10597bd4-6e58-44e0-810e-dc51c735d546:
             uuid: 10597bd4-6e58-44e0-810e-dc51c735d546
@@ -499,9 +499,9 @@ third_party_settings:
         - 'bootstrap_layout_builder:blb_col_10'
         - 'bootstrap_layout_builder:blb_col_11'
         - 'bootstrap_layout_builder:blb_col_12'
-      restricted_categories: {  }
       blacklisted_blocks: {  }
       whitelisted_blocks: {  }
+      restricted_categories: {  }
 _core:
   default_config_hash: zuwYEzRgN7aOYz1y7I0eH_HsOJxRFwf6w8eDqOeIhxM
 id: commerce_product.physical.default
@@ -543,7 +543,6 @@ content:
     region: content
 hidden:
   created: true
-  langcode: true
   layout_builder__layout: true
   product_brand: true
   product_collections: true

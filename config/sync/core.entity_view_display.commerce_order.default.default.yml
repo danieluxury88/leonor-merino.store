@@ -1,4 +1,4 @@
-uuid: 13a3d557-e900-4e84-b0f0-ce03b1353a01
+uuid: 40e22cee-04b1-43d1-bbc3-0becbce43802
 langcode: en
 status: true
 dependencies:
@@ -139,6 +139,5 @@ content:
 hidden:
   billing_profile: true
   order_number: true
-  search_api_excerpt: true
   shipments: true
   total_paid: true

@@ -1,4 +1,4 @@
-uuid: ffecf77d-ad07-442b-befe-c7d6658365f0
+uuid: bff8796b-b853-4147-8540-cea842af762a
 langcode: en
 status: true
 dependencies:
@@ -16,27 +16,27 @@ content:
   purchased_entity:
     type: entity_reference_autocomplete
     weight: -1
-    region: content
     settings:
       match_operator: CONTAINS
-      match_limit: 10
       size: 60
       placeholder: ''
+      match_limit: 10
+    region: content
     third_party_settings: {  }
   quantity:
     type: commerce_quantity
     weight: 1
     region: content
     settings:
-      placeholder: ''
       step: '1'
+      placeholder: ''
     third_party_settings: {  }
   unit_price:
     type: commerce_unit_price
     weight: 2
-    region: content
     settings:
       require_confirmation: true
+    region: content
     third_party_settings: {  }
 hidden:
   adjustments: true

@@ -1,4 +1,4 @@
-uuid: eea1871e-905d-4cb9-bf71-d8321e2903b1
+uuid: a5386ea1-a665-40a7-ac96-009fd464318b
 langcode: en
 status: true
 dependencies:
@@ -21,9 +21,9 @@ content:
   purchased_entity:
     type: commerce_product_variation_attributes
     weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden:
   adjustments: true
   created: true

@@ -1,4 +1,4 @@
-uuid: 372ee27a-a4a5-4913-915b-74a643df9c51
+uuid: aaa3242e-464d-4cdc-bcde-d45bf9993782
 langcode: en
 status: true
 dependencies:
@@ -16,24 +16,23 @@ mode: user
 content:
   shipping_method:
     type: commerce_shipping_method
+    weight: 0
     label: above
+    region: content
     settings: {  }
     third_party_settings: {  }
-    weight: 0
-    region: content
   tracking_code:
     type: commerce_tracking_link
+    weight: 1
     label: hidden
+    region: content
     settings: {  }
     third_party_settings: {  }
-    weight: 1
-    region: content
 hidden:
   amount: true
   items: true
   original_amount: true
   package_type: true
-  search_api_excerpt: true
   shipping_profile: true
   shipping_service: true
   state: true

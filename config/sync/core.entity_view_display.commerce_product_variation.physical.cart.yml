@@ -1,4 +1,4 @@
-uuid: 7ed74359-2198-4977-b0b4-d7ae6d2a8fbf
+uuid: aa18a186-f801-4f67-bf6b-758dd0897546
 langcode: en
 status: true
 dependencies:
@@ -15,23 +15,22 @@ mode: cart
 content:
   product_id:
     type: entity_reference_label
+    weight: 0
+    region: content
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
-    weight: 0
-    region: content
   sku:
     type: string
+    weight: 1
+    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 1
-    region: content
 hidden:
   commerce_variation_cart_form: true
-  langcode: true
   list_price: true
   price: true
   search_api_excerpt: true

@@ -1,4 +1,4 @@
-uuid: fb628bea-453e-415a-8ce9-7f618eb485a2
+uuid: d271aae9-322d-45e4-892e-c2ab56100ab7
 langcode: en
 status: true
 dependencies:
@@ -28,7 +28,5 @@ content:
 hidden:
   created: true
   field_media_audio_file: true
-  langcode: true
   name: true
-  search_api_excerpt: true
   uid: true
