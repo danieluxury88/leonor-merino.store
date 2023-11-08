@@ -15,22 +15,23 @@ mode: cart
 content:
   product_id:
     type: entity_reference_label
-    weight: 0
-    region: content
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
+    weight: 0
+    region: content
   sku:
     type: string
-    weight: 1
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
   commerce_variation_cart_form: true
+  langcode: true
   list_price: true
   price: true
   search_api_excerpt: true

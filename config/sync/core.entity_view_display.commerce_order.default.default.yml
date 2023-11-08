@@ -139,5 +139,6 @@ content:
 hidden:
   billing_profile: true
   order_number: true
+  search_api_excerpt: true
   shipments: true
   total_paid: true
