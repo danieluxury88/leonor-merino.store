@@ -62,6 +62,8 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 $settings['trusted_host_patterns'] = array(
   '^leonor-merino\.store$',
   '^.+\.leonor-merino\.store$',
+  '^leonor-merino\.test$',
+  '^.+\.leonor-merino\.test$',
 );
 
 
