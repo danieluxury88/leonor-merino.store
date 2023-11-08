@@ -1,0 +1,23 @@
+uuid: bc9e41aa-5b22-40f7-90c6-65048e0ff76d
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.picture
+    - field.storage.commerce_product.year
+id: commerce_product.picture.year
+field_name: year
+entity_type: commerce_product
+bundle: picture
+label: Year
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

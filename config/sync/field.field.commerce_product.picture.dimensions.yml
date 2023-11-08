@@ -1,0 +1,21 @@
+uuid: 65748ac7-b14a-4d2f-a561-bfaedd398666
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.picture
+    - field.storage.commerce_product.dimensions
+  module:
+    - physical
+id: commerce_product.picture.dimensions
+field_name: dimensions
+entity_type: commerce_product
+bundle: picture
+label: Dimensions
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: physical_dimensions

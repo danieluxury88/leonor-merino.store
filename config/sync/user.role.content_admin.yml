@@ -15,21 +15,37 @@ dependencies:
     - content_translation
     - field_ui
     - media
+    - node
+    - profile
+    - statistics
+    - system
     - taxonomy
+    - toolbar
 id: content_admin
 label: 'Content Admin'
 weight: -8
 is_admin: null
 permissions:
+  - 'access administration pages'
   - 'access commerce administration pages'
   - 'access commerce_order overview'
   - 'access commerce_product overview'
   - 'access commerce_product_attribute overview'
   - 'access commerce_store overview'
+  - 'access content overview'
+  - 'access site in maintenance mode'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access user profiles'
   - 'administer commerce_product'
   - 'administer content translation'
+  - 'administer statistics'
+  - 'administer taxonomy'
   - 'administer taxonomy_term display'
+  - 'administer themes'
+  - 'change own username'
   - 'create content translations'
+  - 'create default commerce_order'
   - 'create document media'
   - 'create image media'
   - 'create media'
@@ -47,6 +63,7 @@ permissions:
   - 'edit any image media'
   - 'edit own document media'
   - 'edit own image media'
+  - 'translate any entity'
   - 'update any media'
   - 'update commerce_product_attribute'
   - 'update content translations'
@@ -54,9 +71,17 @@ permissions:
   - 'update media'
   - 'use admin toolbar search'
   - 'view all media revisions'
+  - 'view all revisions'
+  - 'view any profile'
   - 'view commerce_order'
   - 'view commerce_product_attribute'
   - 'view commerce_store'
   - 'view default commerce_order'
+  - 'view own profile'
   - 'view own unpublished commerce_product'
+  - 'view own unpublished content'
   - 'view own unpublished media'
+  - 'view own unpublished profile'
+  - 'view post access counter'
+  - 'view the administration theme'
+  - 'view user email addresses'

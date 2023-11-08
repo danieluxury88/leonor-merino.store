@@ -1,0 +1,10 @@
+uuid: ba9546fb-6810-4e5e-86a8-b4a72fe323dc
+langcode: en
+status: true
+dependencies: {  }
+id: picture
+label: Picture
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: null

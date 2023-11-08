@@ -1,0 +1,29 @@
+uuid: ab20a5f8-7f2f-4a99-8839-d7f61e1693d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.picture
+    - field.storage.commerce_product.style
+    - taxonomy.vocabulary.style
+id: commerce_product.picture.style
+field_name: style
+entity_type: commerce_product
+bundle: picture
+label: Style
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      style: style
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

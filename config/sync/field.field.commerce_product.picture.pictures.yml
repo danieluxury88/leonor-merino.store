@@ -1,0 +1,29 @@
+uuid: 378e1fae-cb51-489a-a696-4b36008f9a0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.picture
+    - field.storage.commerce_product.pictures
+    - media.type.image
+id: commerce_product.picture.pictures
+field_name: pictures
+entity_type: commerce_product
+bundle: picture
+label: Pictures
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,14 @@
+uuid: 9b1b0c76-6161-497b-8dcb-70dc949685a0
+langcode: en
+status: true
+dependencies: {  }
+id: picture
+label: Picture
+traits: {  }
+locked: false
+description: 'Picture Entity'
+variationType: picture
+variationTypes:
+  - picture
+multipleVariations: false
+injectVariationFields: false
