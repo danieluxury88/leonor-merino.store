@@ -65,17 +65,16 @@ $settings['trusted_host_patterns'] = array(
 );
 
 
-
-$databases['default']['default'] = array (
-  'database' => 'u674647584_leonor',
-  'username' => 'u674647584_leonor',
-  'password' => 't6B]1+c#m^[',
+$databases['default']['default'] = [
+  'database' => $_ENV['MYSQL_DATABASE'],
+  'username' => $_ENV['MYSQL_USER'],
+  'password' => $_ENV['MYSQL_PASSWORD'],
   'prefix' => '',
-  'host' => 'localhost',
-  'port' => '3306',
+  'host' => $_ENV['MYSQL_HOSTNAME'],
+  'port' => $_ENV['MYSQL_PORT'],
   'isolation_level' => 'READ COMMITTED',
   'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
   'driver' => 'mysql',
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
-);
+];
 $settings['hash_salt'] = 'fsKe3eEQktDtPWbYr18fCIY7OK63vlSM9QhXT15TDrnZx7b1UMZTwUdCkKZ0n5QAEDXuCzr2Mg';
