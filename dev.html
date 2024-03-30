@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" href="img/icons/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="web-apis">
+      <div class="web-workers">
+        <p>Count numbers: <output id="count-result"></output></p>
+        <button onclick="startWorker()">Start Worker</button>
+        <button onclick="stopWorker()">Stop Worker</button>
+      </div>
+      <div class="geolocation-api">
+        <div class="getPosition">
+          <p id="user-current-position"></p>
+          <button onclick="getLocation()">Get Location</button>
+        </div>
+        <div class="watchPosition">
+          <p id="user-watched-position"></p>
+          <button onclick="watchLocation()">Watch Location</button>
+        </div>
+      </div>
+      <div class="drag-and-drop">
+        <h2>Drag and Drop</h2>
+        <p>Drag the image back and forth between the two div elements.</p>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img
+            src="img/screenshots/Daniel-1.png"
+            draggable="true"
+            ondragstart="drag(event)"
+            id="drag1"
+            width="88"
+            height="31"
+          />
+        </div>
+        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img
+            src="img/screenshots/Daniel-2.png"
+            draggable="true"
+            ondragstart="drag(event)"
+            id="drag3"
+            width="88"
+            height="31"
+          />
+        </div>
+      </div>
+      <div class="server-sent-events">
+        <h1>Getting server updates</h1>
+        <div id="sse-result"></div>
+      </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+  <style>
+    .web-apis {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .images-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .images-wrapper img {
+      width: 50%;
+      height: auto;
+    }
+
+    .geolocation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #div1,
+    #div2,
+    #div3 {
+      float: left;
+      width: 100px;
+      height: 35px;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid black;
+    }
+  </style>
+</html>
