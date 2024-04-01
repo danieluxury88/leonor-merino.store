@@ -11,12 +11,12 @@ OneSignalDeferred.push(function (OneSignal) {
 
     notifyButton: {
       enable: true, // Enable the Subscription Bell
-      size: "medium", // 'small', 'medium', or 'large'
+      size: "large", // 'small', 'medium', or 'large'
       position: "bottom-right", // 'bottom-left' or 'bottom-right'
       prenotify: true, // Show an icon indicating unread messages before user subscribes
       showCredit: false, // Hide the 'Powered by OneSignal' branding
       text: {
-        "tip.state.unsubscribed": "Subscribe to notifications",
+        "tip.state.unsubscribed": "Subscríbete a notificationes",
         "tip.state.subscribed": "You're subscribed to notifications",
         "tip.state.blocked": "You've blocked notifications",
         "message.prenotify": "Click to subscribe to notifications",
