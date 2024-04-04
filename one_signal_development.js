@@ -1,4 +1,10 @@
 console.log("OneSignal is loaded");
+
+document.getElementById("numberForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent the form from submitting normally
+  var phoneNumber = document.getElementById("phoneNumber").value;
+  console.log("Entered phone number:", phoneNumber);
+
 var translations = {
   // French
   fr: {
@@ -137,14 +143,14 @@ OneSignalDeferred.push(function (OneSignal) {
     // },
   });
 });
-// let ci = "1719874354";
-// OneSignalDeferred.push(function () {
-//  OneSignal.login(ci);
-// });
+
+OneSignalDeferred.push(function () {
+ OneSignal.login(phoneNumber);
+});
 //
-//OneSignalDeferred.push(function () {
-//  OneSignal.User.addAlias("ALIAS_LABEL", "ALIAS_ID");
-//});
+OneSignalDeferred.push(function () {
+ OneSignal.User.addAlias("ALIAS_LABEL", "ALIAS_ID");
+});
 //
 //const aliases = {
 //  ALIAS_LABEL_01: "ALIAS_ID_01",

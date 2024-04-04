@@ -11,6 +11,13 @@
   <body>
     <h1>Raw Development</h1>
     <div class='onesignal-customlink-container'></div>
+
+    <form id="numberForm">
+      <label for="phoneNumber">Enter a 10-Digit Number:</label><br>
+      <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{10}" title="Please enter a 10-digit number" maxlength="10" required><br>
+      <input type="submit" value="Submit">
+    </form>
+    
     <script src="./one_signal_development.js"></script>
   </body>
 </html>
