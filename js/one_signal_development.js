@@ -33,10 +33,10 @@ OneSignalDeferred.push(function (OneSignal) {
     safari_web_id: "web.onesignal.auto.175a5781-a0a7-4966-97e0-0bfa01fcdb1f",
     persistNotification: false,
     // serviceWorkerParam: { scope: "https://leonor-merino.store/push/onesignal"},
-    // serviceWorkerParam: { scope: "./push/onesignal"},
+    serviceWorkerParam: { scope: "/push/onesignal/"},
     // serviceWorkerParam: { scope: './' },
-    // serviceWorkerPath: "./push/onesignal/OneSignalSDKWorker.js",
-    serviceWorkerPath: 'https://leonor-merino.store/push/onesignal/OneSignalSDKWorker.js',
+    serviceWorkerPath: ".push/onesignal/OneSignalSDKWorker.js",
+    // serviceWorkerPath: 'https://leonor-merino.store/push/onesignal/OneSignalSDKWorker.js',
 
 
     notifyButton: {
