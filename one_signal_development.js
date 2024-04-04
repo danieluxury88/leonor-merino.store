@@ -149,10 +149,12 @@ OneSignalDeferred.push(function (OneSignal) {
 
 OneSignalDeferred.push(function () {
  OneSignal.login(phoneNumber);
+ console.log(`***** login *****: ${phoneNumber}`);
 });
 //
 OneSignalDeferred.push(function () {
  OneSignal.User.addAlias("ALIAS_LABEL", "ALIAS_ID");
+ console.log(`***** addAlias *****: ALIAS_LABEL, ALIAS_ID`);
 });
 //
 //const aliases = {
@@ -190,7 +192,7 @@ OneSignalDeferred.push(function () {
 //
 OneSignalDeferred.push(function() {
  const isSupported = OneSignal.Notifications.isPushSupported();
- OneSignal.Debug.setLogLevel("trace");
+//  OneSignal.Debug.setLogLevel("trace");
  console.log(`Push is supported: ${isSupported}`);
 });
 
