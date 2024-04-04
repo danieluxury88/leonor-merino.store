@@ -1,6 +1,6 @@
 console.log("OneSignal is loaded");
 
-let phoneNumber;
+let phoneNumber = "1719874354";
 document.getElementById("numberForm").addEventListener("submit", function(event) {
   event.preventDefault(); // Prevent the form from submitting normally
   phoneNumber = document.getElementById("phoneNumber").value;
