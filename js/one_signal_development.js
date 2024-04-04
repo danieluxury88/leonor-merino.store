@@ -133,10 +133,10 @@ OneSignalDeferred.push(function (OneSignal) {
     },
   });
 });
-let ci = "1719874354";
-OneSignalDeferred.push(function () {
- OneSignal.login(ci);
-});
+// let ci = "1719874354";
+// OneSignalDeferred.push(function () {
+//  OneSignal.login(ci);
+// });
 //
 //OneSignalDeferred.push(function () {
 //  OneSignal.User.addAlias("ALIAS_LABEL", "ALIAS_ID");
