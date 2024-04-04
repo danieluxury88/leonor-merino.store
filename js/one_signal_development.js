@@ -32,8 +32,8 @@ OneSignalDeferred.push(function (OneSignal) {
     appId: "53a39ae0-5202-4e12-81ac-6dfb335a559f",
     safari_web_id: "web.onesignal.auto.175a5781-a0a7-4966-97e0-0bfa01fcdb1f",
     persistNotification: false,
-    // serviceWorkerParam: { scope: './push/onesignal/' },
-    serviceWorkerParam: { scope: '/' },
+    serviceWorkerParam: { scope: './push/onesignal' },
+    // serviceWorkerParam: { scope: '/' },
     serviceWorkerPath: './push/onesignal/OneSignalSDKWorker.js',
 
     notifyButton: {
