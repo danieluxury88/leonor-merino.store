@@ -246,7 +246,7 @@ function notificationDismissedListener(event) {
   console.log(`dismiss event: ${event}`);
 }
 function foregroundWillDisplayListener(event) {
-  console.log(`notification will display: ${notification}`);
+  console.log(`notification will display: ${event}`);
 }
 function clickEventListener(event) {
   console.log(`click event: ${event}`);
