@@ -34,7 +34,7 @@ OneSignalDeferred.push(function (OneSignal) {
     persistNotification: false,
     // serviceWorkerParam: { scope: "https://leonor-merino.store/push/onesignal"},
     // serviceWorkerParam: { scope: "./push/onesignal"},
-    serviceWorkerParam: { scope: '/' },
+    serviceWorkerParam: { scope: './' },
     // serviceWorkerPath: "./push/onesignal/OneSignalSDKWorker.js",
     serviceWorkerPath: 'https://leonor-merino.store/push/onesignal/OneSignalSDKWorker.js',
 
