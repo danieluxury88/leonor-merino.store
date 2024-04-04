@@ -64,21 +64,21 @@ OneSignalDeferred.push(function (OneSignal) {
       delay: 10,
     },
     promptOptions: {
-      customlink: {
-        enabled: true, /* Required to use the Custom Link */
-        style: "button", /* Has value of 'button' or 'link' */
-        size: "medium", /* One of 'small', 'medium', or 'large' */
-        color: {
-          button: '#E12D30', /* Color of the button background if style = "button" */
-          text: '#FFFFFF', /* Color of the prompt's text */
-        },
-        text: {
-          subscribe: "Subscribe to push notifications", /* Prompt's text when not subscribed */
-          unsubscribe: "Unsubscribe from push notifications", /* Prompt's text when subscribed */
-          explanation: "Get updates from all sorts of things that matter to you", /* Optional text appearing before the prompt button */
-        },
-        unsubscribeEnabled: true, /* Controls whether the prompt is visible after subscription */
-      },
+      // customlink: {
+      //   enabled: true, /* Required to use the Custom Link */
+      //   style: "button", /* Has value of 'button' or 'link' */
+      //   size: "medium", /* One of 'small', 'medium', or 'large' */
+      //   color: {
+      //     button: '#E12D30', /* Color of the button background if style = "button" */
+      //     text: '#FFFFFF', /* Color of the prompt's text */
+      //   },
+      //   text: {
+      //     subscribe: "Subscribe to push notifications", /* Prompt's text when not subscribed */
+      //     unsubscribe: "Unsubscribe from push notifications", /* Prompt's text when subscribed */
+      //     explanation: "Get updates from all sorts of things that matter to you", /* Optional text appearing before the prompt button */
+      //   },
+      //   unsubscribeEnabled: true, /* Controls whether the prompt is visible after subscription */
+      // },
       // slidedown: {
       //   prompts: [
       //     {
@@ -121,21 +121,21 @@ OneSignalDeferred.push(function (OneSignal) {
       //     },
       //   ],
       // },
-      slidedown: {
-        prompts: [
-          {
-            type: 'push',
-            autoPrompt: true,
-            text: { ...promptLangs },
-          },
-        ],
-      },
+      // slidedown: {
+      //   prompts: [
+      //     {
+      //       type: 'push',
+      //       autoPrompt: true,
+      //       text: { ...promptLangs },
+      //     },
+      //   ],
+      // },
     },
   });
 });
-
+let ci = "1719874354";
 OneSignalDeferred.push(function () {
- OneSignal.login("1719874354");
+ OneSignal.login(ci);
 });
 //
 //OneSignalDeferred.push(function () {
