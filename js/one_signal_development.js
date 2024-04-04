@@ -178,6 +178,7 @@ OneSignalDeferred.push(function (OneSignal) {
 //
 OneSignalDeferred.push(function() {
  const isSupported = OneSignal.Notifications.isPushSupported();
+ OneSignal.Debug.setLogLevel("trace");
  console.log(`Push is supported: ${isSupported}`);
 });
 
