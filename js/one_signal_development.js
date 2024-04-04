@@ -34,7 +34,9 @@ OneSignalDeferred.push(function (OneSignal) {
     persistNotification: false,
     serviceWorkerParam: { scope: "./push/onesignal"},
     // serviceWorkerParam: { scope: '/' },
-    serviceWorkerPath: "./push/onesignal/OneSignalSDKWorker.js",
+    // serviceWorkerPath: "./push/onesignal/OneSignalSDKWorker.js",
+    serviceWorkerPath: 'https://leonor-merino.store/push/onesignal/OneSignalSDKWorker.js',
+
 
     notifyButton: {
       enable: true, // Enable the Subscription Bell
