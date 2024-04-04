@@ -1,9 +1,12 @@
 console.log("OneSignal is loaded");
 
+let phoneNumber;
 document.getElementById("numberForm").addEventListener("submit", function(event) {
   event.preventDefault(); // Prevent the form from submitting normally
-  var phoneNumber = document.getElementById("phoneNumber").value;
+  phoneNumber = document.getElementById("phoneNumber").value;
   console.log("Entered phone number:", phoneNumber);
+  // You can perform further actions with the phone number here, such as sending it to a server or processing it in some way
+});
 
 var translations = {
   // French
