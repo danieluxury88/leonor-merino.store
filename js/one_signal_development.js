@@ -1,4 +1,30 @@
 console.log("OneSignal is loaded");
+var translations = {
+  // French
+  fr: {
+    actionMessage: 'Abonnez-vous à nos notifications pour les dernières nouvelles et mises à jour. Vous pouvez désactiver à tout moment.',
+    acceptButton: "S'abonner",
+    cancelButton: 'Non merci',
+  },
+  // Spanish
+  es: {
+    actionMessage: 'Suscríbete a nuestras notificaciones para recibir las últimas noticias y actualizaciones. Puedes desactivarlo en cualquier momento.',
+    acceptButton: 'Suscribir',
+    cancelButton: 'No, gracias',
+  },
+  // Default. Used if Browser preferred language does not match any of the above.
+  default: {
+    actionMessage: 'Subscribe to our notifications for the latest news and updates. You can disable anytime.',
+    acceptButton: 'Subscribe',
+    cancelButton: 'No thanks',
+  },
+};
+
+var language = navigator.language.toLowerCase();
+var translation = translations[language] || translations.default;
+var promptLangs = { ...translation };
+
+
 window.OneSignalDeferred = window.OneSignalDeferred || [];
 
 OneSignalDeferred.push(function (OneSignal) {
@@ -38,45 +64,69 @@ OneSignalDeferred.push(function (OneSignal) {
       delay: 10,
     },
     promptOptions: {
+      customlink: {
+        enabled: true, /* Required to use the Custom Link */
+        style: "button", /* Has value of 'button' or 'link' */
+        size: "medium", /* One of 'small', 'medium', or 'large' */
+        color: {
+          button: '#E12D30', /* Color of the button background if style = "button" */
+          text: '#FFFFFF', /* Color of the prompt's text */
+        },
+        text: {
+          subscribe: "Subscribe to push notifications", /* Prompt's text when not subscribed */
+          unsubscribe: "Unsubscribe from push notifications", /* Prompt's text when subscribed */
+          explanation: "Get updates from all sorts of things that matter to you", /* Optional text appearing before the prompt button */
+        },
+        unsubscribeEnabled: true, /* Controls whether the prompt is visible after subscription */
+      },
+      // slidedown: {
+      //   prompts: [
+      //     {
+      //       type: "category",
+      //       autoPrompt: true,
+      //       text: {
+      //         actionMessage:
+      //           "We'd like to show you notifications for the latest news and updates.",
+      //         acceptButton: "Allow",
+      //         cancelButton: "Cancel",
+
+      //         /* CATEGORY SLIDEDOWN SPECIFIC TEXT */
+      //         negativeUpdateButton: "Cancel",
+      //         positiveUpdateButton: "Save Preferences",
+      //         updateMessage:
+      //           "Update your push notification subscription preferences.",
+      //       },
+      //       delay: {
+      //         pageViews: 3,
+      //         timeDelay: 20,
+      //       },
+      //       categories: [
+      //         {
+      //           tag: "politics",
+      //           label: "Politics",
+      //         },
+      //         {
+      //           tag: "local_news",
+      //           label: "Local News",
+      //         },
+      //         {
+      //           tag: "world_news",
+      //           label: "World News",
+      //         },
+      //         {
+      //           tag: "culture",
+      //           label: "Culture",
+      //         },
+      //       ],
+      //     },
+      //   ],
+      // },
       slidedown: {
         prompts: [
           {
-            type: "category",
+            type: 'push',
             autoPrompt: true,
-            text: {
-              actionMessage:
-                "We'd like to show you notifications for the latest news and updates.",
-              acceptButton: "Allow",
-              cancelButton: "Cancel",
-
-              /* CATEGORY SLIDEDOWN SPECIFIC TEXT */
-              negativeUpdateButton: "Cancel",
-              positiveUpdateButton: "Save Preferences",
-              updateMessage:
-                "Update your push notification subscription preferences.",
-            },
-            delay: {
-              pageViews: 3,
-              timeDelay: 20,
-            },
-            categories: [
-              {
-                tag: "politics",
-                label: "Politics",
-              },
-              {
-                tag: "local_news",
-                label: "Local News",
-              },
-              {
-                tag: "world_news",
-                label: "World News",
-              },
-              {
-                tag: "culture",
-                label: "Culture",
-              },
-            ],
+            text: { ...promptLangs },
           },
         ],
       },
@@ -84,9 +134,9 @@ OneSignalDeferred.push(function (OneSignal) {
   });
 });
 
-//OneSignalDeferred.push(function () {
-//  OneSignal.login("EID");
-//});
+OneSignalDeferred.push(function () {
+ OneSignal.login("1719874354");
+});
 //
 //OneSignalDeferred.push(function () {
 //  OneSignal.User.addAlias("ALIAS_LABEL", "ALIAS_ID");
@@ -125,10 +175,10 @@ OneSignalDeferred.push(function (OneSignal) {
 //  OneSignal.Notifications.requestPermission();
 //});
 //
-//OneSignalDeferred.push(function() {
-//  const isSupported = OneSignal.Notifications.isPushSupported();
-//  console.log(`Push is supported: ${isSupported}`);
-//});
+OneSignalDeferred.push(function() {
+ const isSupported = OneSignal.Notifications.isPushSupported();
+ console.log(`Push is supported: ${isSupported}`);
+});
 
 OneSignalDeferred.push(function () {
   OneSignal.User.PushSubscription.addEventListener(
