@@ -10,7 +10,7 @@ document.getElementById("numberForm").addEventListener("submit", function(event)
   phoneNumber = document.getElementById("phoneNumber").value;
   full_name = document.getElementById("name").value;
   alias = document.getElementById("alias").value;
-  consecionario = document.getElementById("consecionario").value;
+  consecionario = document.getElementById("concesionario").value;
   console.log("Entered phone number:", phoneNumber);
   // You can perform further actions with the phone number here, such as sending it to a server or processing it in some way
 });
