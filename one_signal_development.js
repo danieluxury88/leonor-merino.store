@@ -1,9 +1,16 @@
 console.log("OneSignal is loaded");
 
 let phoneNumber = "1719874354";
+let full_name = "Leonor Merino";
+let alias = "leonor";
+let consec = "consecionario";
+
 document.getElementById("numberForm").addEventListener("submit", function(event) {
   event.preventDefault(); // Prevent the form from submitting normally
   phoneNumber = document.getElementById("phoneNumber").value;
+  full_name = document.getElementById("name").value;
+  alias = document.getElementById("alias").value;
+  consecionario = document.getElementById("consecionario").value;
   console.log("Entered phone number:", phoneNumber);
   // You can perform further actions with the phone number here, such as sending it to a server or processing it in some way
 });
@@ -243,7 +250,9 @@ function pushSubscriptionChangeListener(event) {
   if (event.current.token) {
     console.log(`The push subscription has received a token!`);
     OneSignal.login(phoneNumber);
-    OneSignal.User.addAlias("ALIAS_LABEL", "ALIAS_ID");
+    OneSignal.User.addAlias("ALIAS_LABEL", alias);
+    OneSignal.User.addTag("Consecionario", consecionario);
+    OneSignal.User.addTag("Nombre", full_name);
     //this is a good place to call OneSignal.login and pass in your user ID
   }
 }
