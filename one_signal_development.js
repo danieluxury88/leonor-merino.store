@@ -242,6 +242,8 @@ OneSignalDeferred.push(function () {
 function pushSubscriptionChangeListener(event) {
   if (event.current.token) {
     console.log(`The push subscription has received a token!`);
+    OneSignal.login(phoneNumber);
+    OneSignal.User.addAlias("ALIAS_LABEL", "ALIAS_ID");
     //this is a good place to call OneSignal.login and pass in your user ID
   }
 }
