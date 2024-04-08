@@ -1,3 +1,5 @@
+const { userInfo } = require("os");
+
 console.log("OneSignal is loaded");
 
 let phoneNumber = "1719874354";
@@ -12,6 +14,10 @@ document.getElementById("numberForm").addEventListener("submit", function(event)
   alias = document.getElementById("alias").value;
   consecionario = document.getElementById("concesionario").value;
   console.log("Entered phone number:", phoneNumber);
+  userInfo = document.getElementById("user-information");
+  userInfo.textContent = `Phone Number: ${phoneNumber}, Full Name: ${full_name}, Alias: ${alias}, Concesionario: ${consecionario}`;
+  // userInfo.textContent = `Phone Number: ${phoneNumber}, Full Name: ${full_name}, Alias: ${alias}, Concesionario: ${consecionario}`;
+
   // You can perform further actions with the phone number here, such as sending it to a server or processing it in some way
 });
 
