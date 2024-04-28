@@ -1,4 +1,5 @@
 <?php
+require_once 'functions.php';
 // Database setup and connection
 function getDB() {
     $db = new PDO('sqlite:/path_to_your_database/device_events.db');
@@ -17,20 +18,6 @@ function getDB() {
     return $db;
 }
 
-// Function to log events to a file
-function logToFile($event) {
-    $logMessage = sprintf(
-        "Timestamp: %s, Device ID: %s, Event: %s, Location: (%s, %s)\n",
-        date("Y-m-d H:i:s", $event['timestamp']),
-        $event['device.id'],
-        $event['event.code'],
-        $event['position.latitude'],
-        $event['position.longitude']
-    );
-
-    // Append log message to a file
-    file_put_contents("events_log.txt", $logMessage, FILE_APPEND);
-}
 
 // Ensure that this script only accepts POST requests
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
@@ -68,7 +55,7 @@ function processDeviceEvent($event, $db) {
     // Log and insert into database
     error_log("Received event for device ID: " . $event['device.id'] . " with event code: " . $event['event.code']);
     // Log to a file
-    logToFile($event);
+    logEvent($event);
     // insertEvent($event, $db);
 }
 
