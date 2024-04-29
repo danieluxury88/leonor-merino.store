@@ -9,8 +9,10 @@ function processDeviceEvent($event) {
     logEvent($event);
     $id = getExternalDeviceId($event['device.id']);
     $message = createMessage($event);
-    $res = sendPushNotification($message,$id);
-    echo $res;
+    if ($message != null) {
+        $res = sendPushNotification($message,$id);
+        echo $res;
+    }
 }
 
 function processWebhookData($items) {
@@ -37,7 +39,7 @@ if (json_last_error() !== JSON_ERROR_NONE) {
 
 if (is_array($data)) {
     processWebhookData($data);
-    http_response_code(200); // OK
+    http_response_code(200);
     echo "Data processed successfully";
 } else {
     http_response_code(422); // Unprocessable Entity
