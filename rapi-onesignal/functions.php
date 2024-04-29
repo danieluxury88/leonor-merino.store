@@ -17,3 +17,10 @@ function logEvent($event) {
     );
     logToFile($logMessage);
 }
+
+function getExternalDeviceId($deviceId) {
+    $deviceMap = [
+        '5086284' => '1723554942',
+    ];
+    return $deviceMap[$deviceId];
+}
