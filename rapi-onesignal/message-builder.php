@@ -9,6 +9,5 @@ function createMessage($event) {
         $event['position.latitude'],
         $event['position.longitude']
     );
-    $message = 'Test event';
     return $message;
 }
