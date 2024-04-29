@@ -1,7 +1,7 @@
 <?php
 // Webhook URL
 // $url = 'https://leonor-merino.store/rapi-onesignal/test-event.php';
-$url = 'https://leonor-merino.store/rapi-onesignal/handle-event.php';
+$url = 'https://leonor-merino.store/rapi-onesignal/handle-flespi-event.php';
 
 // Sample JSON payload
 $data = [
