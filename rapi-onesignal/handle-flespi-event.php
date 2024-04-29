@@ -1,10 +1,12 @@
 <?php
 require_once 'functions.php';
+require_once 'send-onesignal-notification.php';
 
 // Function to process each device event
 function processDeviceEvent($event) {
     error_log("Received event for device ID: " . $event['device.id'] . " with event code: " . $event['event.code']);
     logEvent($event);
+    sendPushNotification("hola","1723554943");
 }
 
 function processWebhookData($items) {
