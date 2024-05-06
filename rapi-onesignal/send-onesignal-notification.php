@@ -1,7 +1,7 @@
 <?php
 require 'config.php';
 
-function sendPushNotification($message, $userId, $url) {
+function sendPushNotification($message, $userId) {
     $content = array(
         "en" => $message
     );
