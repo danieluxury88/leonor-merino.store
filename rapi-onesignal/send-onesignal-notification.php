@@ -1,7 +1,7 @@
 <?php
 require 'config.php';
 
-function sendPushNotification($message, $userId) {
+function sendPushNotification($message, $userId, $url) {
     $content = array(
         "en" => $message
     );
@@ -10,7 +10,8 @@ function sendPushNotification($message, $userId) {
         'app_id' => ONESIGNAL_APP_ID,
         'include_external_user_ids' => array($userId),
         'data' => array("foo" => "bar"),
-        'contents' => $content
+        'contents' => $content,
+        'url' => 'https://linkhomeecuador.com/linkhome/devgps/rapitrack-front/'
     );
 
     $fields = json_encode($fields);
