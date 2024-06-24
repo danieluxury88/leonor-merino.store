@@ -6,6 +6,17 @@ function logToFile($logMessage) {
     file_put_contents("events_log.txt", $logMessage, FILE_APPEND);
 }
 
+function logMessage($message) {
+    $logMessage = sprintf(
+        "Timestamp: %s, Device ID: %s, Event: %s, Location: (%s, %s)\n",
+        date("Y-m-d H:i:s", $event['timestamp']),
+        $event['device.id'],
+        $event['event.code'],
+        $event['position.latitude'],
+        $event['position.longitude']
+    );
+    logToFile($logMessage);
+}
 function logEvent($event) {
     $logMessage = sprintf(
         "Timestamp: %s, Device ID: %s, Event: %s, Location: (%s, %s)\n",
